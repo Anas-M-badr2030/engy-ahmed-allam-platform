@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cream: #F9F6F0;
+  --bg-card: #FFFFFF;
+  --gold-primary: #C8A97E;
+  --gold-hover: #B69567;
+  --dark-primary: #181512;
+  --dark-secondary: #2A2520;
+  --text-main: #221E1A;
+  --text-muted: #6E655C;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-main);
+  font-family: var(--font-cairo), sans-serif;
+  overflow-x: hidden;
+}
+
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F2ECE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8A97E;
+  border-radius: 4px;
+}
