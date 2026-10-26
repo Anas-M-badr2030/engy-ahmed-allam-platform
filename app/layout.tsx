@@ -20,6 +20,19 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap"
           rel="stylesheet"
         />
+{/* كود تتبع Microsoft Clarity */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "z3u1v27pux");
+            `,
+          }}
+        />
       </head>
       <body
         className="min-h-screen flex flex-col bg-[#F9F6F0] text-[#221E1A] antialiased"
