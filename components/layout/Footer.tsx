@@ -31,7 +31,7 @@ export default function Footer() {
             </p>
             <p className="text-gray-400 text-sm">لأن جمالك يستحق عناية خاصة</p>
 
-            {/* أيقونات التواصل الاجتماعي بالروابط الصحيحة */}
+            {/* أيقونات التواصل الاجتماعي */}
             <div className="flex items-center justify-center gap-4 mt-5">
               <a
                 href="https://wa.me/201069488778"
@@ -60,14 +60,15 @@ export default function Footer() {
               >
                 <Facebook className="w-4 h-4" />
               </a>
+              {/* أيقونة تيك توك محسنة ومصممة بأناقة */}
               <a
                 href="https://www.tiktok.com/@engy_ahmedallam?_r=1&_t=ZS-9AsdJKPGm6H"
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 hover:bg-[#C8A97E] hover:text-[#181512] flex items-center justify-center transition-colors font-bold text-xs"
+                className="w-10 h-10 rounded-full bg-white/5 hover:bg-[#C8A97E] hover:text-[#181512] flex items-center justify-center transition-colors font-bold text-xs tracking-tighter"
                 title="تيك توك"
               >
-                TT
+                TikTok
               </a>
             </div>
           </div>
@@ -101,7 +102,19 @@ export default function Footer() {
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start gap-2.5">
                   <MapPin className="w-5 h-5 text-[#C8A97E] shrink-0 mt-0.5" />
-                  <span>طنطا - شارع عثمان محمد من ميدان الساعة - برج الفيروز</span>
+                  <div>
+                    <span>طنطا - شارع عثمان محمد من ميدان الساعة - برج الفيروز</span>
+                    <div className="mt-1">
+                      <a
+                        href="https://maps.app.goo.gl/P9o4deqwMwZSDCuj9?g_st=ac"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[#C8A97E] text-xs font-semibold hover:underline inline-flex items-center gap-1"
+                      >
+                        📍 فتح الموقع على خرائط جوجل
+                      </a>
+                    </div>
+                  </div>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Phone className="w-5 h-5 text-[#C8A97E] shrink-0" />
@@ -115,7 +128,7 @@ export default function Footer() {
             </div>
           </div>
 
-{/* حقوق النشر والتصميم */}
+          {/* حقوق النشر وتوقيع Aipudio-web */}
           <div className="border-t border-white/10 mt-10 pt-6 text-center text-xs text-gray-400 space-y-2">
             <p>© {new Date().getFullYear()} Engy Ahmed Allam. جميع الحقوق محفوظة.</p>
             <p className="text-gray-400">
