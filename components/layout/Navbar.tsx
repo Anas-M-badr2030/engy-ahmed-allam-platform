@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Calendar, Phone, Instagram, Facebook } from 'lucide-react';
+import { Menu, X, Calendar } from 'lucide-react';
 
 const navLinks = [
   { name: 'الرئيسية', href: '/' },
@@ -69,14 +69,14 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* القائمة الجانبية للموبايل منظمة ومرتبة */}
+      {/* القائمة الجانبية للموبايل (تم إصلاح ظهور العناصر بالكامل) */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden flex">
+        <div className="fixed inset-0 z-50 lg:hidden flex justify-end">
           <div
             className="fixed inset-0 bg-black/70 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
           />
-          <div className="relative w-80 max-w-full bg-[#181512] text-white h-full flex flex-col justify-between p-6 z-10 mr-auto shadow-2xl border-l border-[#C8A97E]/30 overflow-y-auto">
+          <div className="relative w-80 max-w-full bg-[#181512] text-white h-full flex flex-col justify-between p-6 z-10 shadow-2xl border-r border-[#C8A97E]/30 overflow-y-auto">
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-white/10">
                 <span className="text-2xl font-bold text-[#C8A97E]" style={{ fontFamily: 'var(--font-serif)' }}>
