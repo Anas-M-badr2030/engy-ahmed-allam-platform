@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="relative bg-[#181512] text-white overflow-hidden">
       {/* خلفية بصورة مع تدرج لوني داكن */}
-      <div className="absolute inset-0 opacity-45 bg-[url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center" />
+      <div className="absolute inset-0 opacity-45 bg-[url('/images/hero.png')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-gradient-to-l from-[#181512] via-[#181512]/80 to-transparent" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 flex flex-col items-start justify-center">
