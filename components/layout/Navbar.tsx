@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Calendar } from 'lucide-react';
+import { Menu, X, Calendar, Phone, Instagram, Facebook } from 'lucide-react';
 
 const navLinks = [
   { name: 'الرئيسية', href: '/' },
@@ -69,14 +69,14 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* القائمة الجانبية للموبايل (مطابقة للصورة أعلى اليمين) */}
+      {/* القائمة الجانبية للموبايل منظمة ومرتبة */}
       {isOpen && (
         <div className="fixed inset-0 z-50 lg:hidden flex">
           <div
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
           />
-          <div className="relative w-72 max-w-xs bg-[#181512] text-white h-full flex flex-col justify-between p-6 z-10 mr-auto shadow-2xl border-l border-[#C8A97E]/20">
+          <div className="relative w-80 max-w-full bg-[#181512] text-white h-full flex flex-col justify-between p-6 z-10 mr-auto shadow-2xl border-l border-[#C8A97E]/30 overflow-y-auto">
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-white/10">
                 <span className="text-2xl font-bold text-[#C8A97E]" style={{ fontFamily: 'var(--font-serif)' }}>
@@ -90,13 +90,13 @@ export default function Navbar() {
                 </button>
               </div>
 
-              <nav className="mt-6 flex flex-col space-y-1">
+              <nav className="mt-6 flex flex-col space-y-2">
                 {navLinks.map((link) => (
                   <Link
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="py-3 px-3 rounded-lg text-sm font-medium text-gray-200 hover:bg-white/5 hover:text-[#C8A97E] border-b border-white/5 transition-colors"
+                    className="py-3 px-4 rounded-xl text-sm font-medium text-gray-200 hover:bg-[#C8A97E]/10 hover:text-[#C8A97E] border-b border-white/5 transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -104,14 +104,16 @@ export default function Navbar() {
               </nav>
             </div>
 
-            <Link
-              href="/#booking"
-              onClick={() => setIsOpen(false)}
-              className="w-full bg-[#C8A97E] hover:bg-[#b59469] text-[#181512] font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 shadow-lg mt-6"
-            >
-              <Calendar className="w-4 h-4" />
-              <span>احجز الآن</span>
-            </Link>
+            <div className="pt-6 border-t border-white/10 mt-6">
+              <Link
+                href="/#booking"
+                onClick={() => setIsOpen(false)}
+                className="w-full bg-[#C8A97E] hover:bg-[#b59469] text-[#181512] font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 shadow-lg mb-4"
+              >
+                <Calendar className="w-4 h-4" />
+                <span>احجز الآن</span>
+              </Link>
+            </div>
           </div>
         </div>
       )}
