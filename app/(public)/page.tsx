@@ -17,7 +17,7 @@ export default function HomePage() {
       <Navbar />
       <main className="flex-1">
         <HeroSection />
-        <ServicesSection onSelectService={(srv) => setSelectedService(srv)} />
+        <ServicesSection onSelectService={(srv: Service) => setSelectedService(srv)} />
         <BookingWizard preSelectedService={selectedService} />
         <AboutGalleryPolicies />
       </main>
