@@ -4,12 +4,12 @@ import { Calendar, ShieldCheck, Sparkles, UserCheck } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-[#181512] text-white overflow-hidden">
-      {/* خلفية بصورة مع تدرج لوني داكن */}
-      <div className="absolute inset-0 opacity-45 bg-[url('/images/hero.png')] bg-cover bg-center" />
-      <div className="absolute inset-0 bg-gradient-to-l from-[#181512] via-[#181512]/80 to-transparent" />
+    <section className="relative bg-[#181512] text-white overflow-hidden min-h-[85vh] flex items-center">
+      {/* خلفية محسنة الوضوح والتباين */}
+      <div className="absolute inset-0 opacity-60 bg-[url('/images/hero.png')] bg-cover bg-center" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#181512] via-[#181512]/70 to-transparent" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 flex flex-col items-start justify-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 flex flex-col items-start justify-center w-full">
         <div className="max-w-xl space-y-6">
           <h1 className="text-3xl sm:text-5xl font-bold leading-tight text-white">
             خبرة في العناية ببشرتك <br />
