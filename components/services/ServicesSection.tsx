@@ -1,3 +1,10 @@
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+import { Clock } from 'lucide-react';
+import { Service } from '@/types';
+// ...باقي الكود
 import React from 'react';
 import Link from 'next/link';
 import { Clock } from 'lucide-react';
