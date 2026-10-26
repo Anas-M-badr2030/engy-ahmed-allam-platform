@@ -69,14 +69,14 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* القائمة الجانبية للموبايل (تم إصلاح ظهور العناصر بالكامل) */}
+      {/* القائمة الجانبية للموبايل - معدلة لتظهر من اليمين بوضوح */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden flex justify-end">
+        <div className="fixed inset-0 z-50 lg:hidden flex justify-start">
           <div
             className="fixed inset-0 bg-black/70 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
           />
-          <div className="relative w-80 max-w-full bg-[#181512] text-white h-full flex flex-col justify-between p-6 z-10 shadow-2xl border-r border-[#C8A97E]/30 overflow-y-auto">
+          <div className="relative w-80 max-w-full bg-[#181512] text-white h-full flex flex-col justify-between p-6 z-10 shadow-2xl border-l border-[#C8A97E]/30 overflow-y-auto">
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-white/10">
                 <span className="text-2xl font-bold text-[#C8A97E]" style={{ fontFamily: 'var(--font-serif)' }}>
@@ -84,7 +84,8 @@ export default function Navbar() {
                 </span>
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="text-gray-400 hover:text-white p-1"
+                  className="text-gray-400 hover:text-white p-2 rounded-lg bg-white/5"
+                  aria-label="إغلاق القائمة"
                 >
                   <X className="w-6 h-6" />
                 </button>
